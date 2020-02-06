@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: "header header"
+                        "menu contenido";
+}
+
+.header{
+    grid-area: header;
+    background: #fff;
+}
+
+.menu-lateral{
+    background: #ccc;
+}
+
+.main{
+    background: #414141;
+}
+
+
