@@ -30,10 +30,12 @@ a{
 }
 
 .menu-lateral{
+    grid-area: menu;
     background: #ccc;
 }
 
 .main{
+    grid-area: contenido;
     background: #414141;
 }
 
