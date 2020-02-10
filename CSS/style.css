@@ -22,6 +22,12 @@ a{
     grid-template-rows: 60px auto;
     grid-template-areas: "header header"
                         "menu contenido";
+    transition: all .3s ease ;                    
+}
+
+.contenedor .activate{
+    grid-template-columns: 300px auto;
+    
 }
 
 .header{
