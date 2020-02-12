@@ -30,11 +30,76 @@ a{
      
 }
 
+/*-------------------- -------------------HEADER-------------------- -------------------*/
+
 .header{
     grid-area: header;
     background: #fff;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: "logo busqueda iconos";
 }
 
+.header .contenedor-logo{
+grid-area: logo;
+display: flex;
+align-items: center;
+}
+
+.header .contenedor-logo .boton-menu{
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.header .contenedor-logo .boton-menu:hover{
+    background: #E7E7E7;
+}
+
+.header .contenedor-logo .logo .fas{
+    background: #ff0000;
+    padding: 7px 12px ;
+    border-radius: 4px;
+    font-size: 8px;
+    color: #fff;
+    position: relative;
+    top: -4px;
+    margin-right: 4px;
+}
+
+
+.header .contenedor-logo .logo{
+    font-family:'Bebas Neue', cursive;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+}
+
+
+
+.header .barra-busqueda{
+    grid-area: busqueda;
+    display: flex;
+}
+
+.header .botones-header{
+    grid-area: iconos;
+}
+
+
+
+
+/*-------------------- -------------------MENU LATERAL-------------------- -------------------*/
 
 .menu-lateral{
     grid-area: menu;
