@@ -92,6 +92,19 @@ align-items: center;
     display: flex;
 }
 
+.header .barra-busqueda input{
+    min-width: 60%;
+    padding: 0 15px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc ;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
 .header .botones-header{
     grid-area: iconos;
 }
@@ -110,5 +123,4 @@ align-items: center;
     grid-area: contenido;
     background: #414141;
 }
-
 
