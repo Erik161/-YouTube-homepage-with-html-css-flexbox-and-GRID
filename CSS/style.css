@@ -34,18 +34,17 @@ a{
 
 .header{
     grid-area: header;/*Indicamos en grid que esta es el area Header  */
-    background: #fff;
-    padding: 0 20px;
+    padding: 0 20px;/*de 0 arriba y abajo y a los lados de 20px   */
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr auto; /*Definimos 3 columnas| 1era. auto| 2da. 1fr|3ra. auto|   */
     align-items: center;
     justify-content: space-between;
     grid-gap: 20px;
-    grid-template-areas: "logo busqueda iconos";
+    grid-template-areas: "logo busqueda iconos"; /*Definimos 1 column para logo| busqueda| iconos */
 }
 
 .header.contenedor-logo{
-grid-area: logo;
+grid-area: logo; /*Indicamos en grid que esta es el area logo */
 display: flex;
 align-items: center;
 }
@@ -66,7 +65,7 @@ align-items: center;
     background: #E7E7E7;
 }
 
-.header.contenedor-logo .logo .fas{
+.header.contenedor-logo .logo .ri-play-fill{
     background: #ff0000;
     padding: 7px 12px ;
     border-radius: 4px;
@@ -88,7 +87,7 @@ align-items: center;
 
 
 .header.barra-busqueda{
-    grid-area: busqueda;
+    grid-area: busqueda; /*Indicamos en grid que esta es el area busqueda  */
     display: flex;
 }
 
@@ -106,7 +105,7 @@ align-items: center;
 
 
 .header.botones-header{
-    grid-area: iconos;
+    grid-area: iconos; /*Indicamos en grid que esta es el area iconos  */
 }
 
 
