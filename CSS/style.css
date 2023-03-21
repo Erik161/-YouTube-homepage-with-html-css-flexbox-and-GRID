@@ -1,113 +1,151 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+	font-family: 'Open Sans', sans-serif;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+	text-decoration: none;
+	color: #000;
 }
 
-.contenedor{
-    width: 100%;
-    min-height: 100vh; /*Define una altura minima */
-    margin: 0 auto; /* Para Centrar el contenedor */
-    display: grid;
-    grid-template-columns: 90px auto; /*Se define 2 columnas| una de 90px| la segunda en auto */
-    grid-template-rows: 60px auto;/*Se define 2 columnas una de 60px| la segunda en auto */
-    grid-template-areas: "header header" /*Abarca las 2 columnas disponibles */
-                        "menu contenido";/*Indicamos que menu tenga una columna y contenido tenga otra columna*/
-    transition: all .3s ease ;                    
+.contenedor {
+	width: 100%;
+	min-height: 100vh; /*Define una altura minima */
+	margin: 0 auto; /* Para Centrar el contenedor */
+	display: grid;
+	grid-template-columns: minmax(90px, 90px) auto;/*Se define 2 columnas| una de 90px| la segunda en auto */
+	grid-template-rows: 60px auto; /*Se define 2 columnas una de 60px| la segunda en auto */
+	grid-template-areas: "header header" /*Abarca las 2 columnas disponibles */
+						 "menu contenido"; /*Indicamos que menu tenga una columna y contenido tenga otra columna*/
+	transition: all .3s ease;
 }
 
-.contenedor.activate{
-    grid-template-columns: 300px auto;/*Se define 2 columnas una de 300px| la segunda en auto */
-     
+.contenedor.activate {
+	grid-template-columns: minmax(300px, 18%) auto; /*Se define 2 columnas una de 300px| la segunda en auto */
 }
 
-/*-------------------- -------------------HEADER-------------------- -------------------*/
-
-.header{
-    grid-area: header;/*Indicamos en grid que esta es el area Header  */
-    padding: 0 20px;/*de 0 arriba y abajo y a los lados de 20px   */
-    display: grid;
-    grid-template-columns: auto 1fr auto; /*Definimos 3 columnas| 1era. auto| 2da. 1fr|3ra. auto|   */
-    align-items: center;
-    justify-content: space-between;
-    grid-gap: 20px;
-    grid-template-areas: "logo busqueda iconos"; /*Definimos 1 column para logo| busqueda| iconos */
+/* ---- ---- ---- HEADER ---- ---- ---- */
+.header {
+	grid-area: header; /*Indicamos en grid que esta es el area Header  */
+	padding: 0 20px; /*de 0 arriba y abajo y a los lados de 20px   */
+	display: grid;
+	grid-template-columns: auto 1fr auto; /*Definimos 3 columnas| 1era. auto| 2da. 1fr|3ra. auto|   */
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 20px;
+	grid-template-areas: "logo busqueda iconos"; /*Definimos 1 column para logo| busqueda| iconos */
 }
 
-.header.contenedor-logo{
-grid-area: logo; /*Indicamos en grid que esta es el area logo */
-display: flex;
-align-items: center;
+.header .contenedor-logo {
+	grid-area: logo; /*Indicamos en grid que esta es el area logo */
+	display: flex;
+	align-items: center;
 }
 
-.header.contenedor-logo .boton-menu{
-    border: none;
-    padding: 10px;
-    background: none;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 100px;
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+.header .contenedor-logo .boton-menu {
+	border: none;
+	padding: 10px;
+	background: none;
+	cursor: pointer;
+	font-size: 18px;
+	border-radius: 100px;
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
 }
 
-.header.contenedor-logo .boton-menu:hover{
-    background: #E7E7E7;
+.header .contenedor-logo .boton-menu:hover {
+	background: #E7E7E7;
 }
 
-.header.contenedor-logo .logo .ri-play-fill{
-    background: #ff0000;
-    padding: 7px 12px ;
-    border-radius: 4px;
-    font-size: 8px;
-    color: #fff;
-    position: relative;
-    top: -4px;
-    margin-right: 4px;
+.header .contenedor-logo .logo .ri-play-fill {
+	background: #ff0000;
+	padding: 7px 12px;
+	border-radius: 4px;
+	font-size: 8px;
+	color: #fff;
+	position: relative;
+	top: -4px;
+	margin-right: 4px;
 }
 
-
-.header.contenedor-logo .logo{
-    font-family:'Bebas Neue', cursive;
-    font-size: 20px;
-    position: relative;
-    top: 2px;
+.header .contenedor-logo .logo {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+	position: relative;
+	top: 2px;
 }
 
-
-
-.header.barra-busqueda{
-    grid-area: busqueda; /*Indicamos en grid que esta es el area busqueda  */
-    display: flex;
+.header .barra-busqueda {
+	grid-area: busqueda; /*Indicamos en grid que esta es el area busqueda  */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.header.barra-busqueda input{
-    min-width: 60%;
-    padding: 0 15px;
-    height: 35px;
-    line-height: 35px;
-    border: 1px solid #ccc ;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+.header .barra-busqueda input {
+	min-width: 60%;
+	padding: 0 15px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
 }
 
-
-
-
-.header.botones-header{
-    grid-area: iconos; /*Indicamos en grid que esta es el area iconos  */
+.header .barra-busqueda button {
+	height: 35px;
+	border: 1px solid #ccc;
+	border-left: none;
+	color: #545454;
+	background: #f8f8f8;
+	padding: 0 25px;
+	cursor: pointer;
 }
 
+.header .barra-busqueda button:hover {
+	background: #f5f5f5;
+}
+
+.header .botones-header {
+	grid-area: iconos; /*Indicamos en grid que esta es el area iconos  */
+	display: flex;
+	align-items: center;
+}
+
+.header .botones-header button {
+	background: none;
+	border: none;
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+	padding: 7px 12px;
+	border-radius: 100px;
+	color: #828282;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.header .botones-header button:hover {
+	background: #e7e7e7;
+}
+
+.header .botones-header .avatar {
+	width: 30px;
+	height: 30px;
+	display: inline-block;/*Indicamos que esta clase sea un bloque */
+}
+
+.header .botones-header .avatar img {
+	vertical-align: top;
+	width: 100%;
+	border-radius: 100px;
+}
 
 
 
@@ -122,4 +160,3 @@ align-items: center;
     grid-area: contenido;/*Indicamos en grid que esta es la area contenido */
     background: #414141;
 }
-
