@@ -186,6 +186,16 @@ a {
 }
 
 
+.menu-lateral hr{
+	margin: 20px 0;
+	border: 1px solid #dfdfdf;
+}
+
+
+
+
+
+
 
 .main{
     grid-area: contenido;/*Indicamos en grid que esta es la area contenido */
