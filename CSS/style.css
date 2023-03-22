@@ -153,8 +153,39 @@ a {
 
 .menu-lateral{
     grid-area: menu;/*Indicamos en grid que esta es la area menu */
-    background: #ccc;
+    background: #fff;
 }
+
+.menu-lateral a {
+	display: block;
+	padding: 15px 35px;
+	color: #000;
+}
+
+
+.menu-lateral a:hover{
+	background: #e5e5e5;
+}
+
+.menu-lateral a.active{
+	background: #e5e5e5;
+	font-weight: bold;
+}
+
+
+.menu-lateral .ri {
+	color: #606060;
+	margin-right: 32px;
+	width: 20px;
+	text-align: center;
+}
+
+
+.menu-lateral a.active .ri{
+	color: #ff0000;
+}
+
+
 
 .main{
     grid-area: contenido;/*Indicamos en grid que esta es la area contenido */
