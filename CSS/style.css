@@ -154,12 +154,14 @@ a {
 .menu-lateral{
     grid-area: menu;/*Indicamos en grid que esta es la area menu */
     background: #fff;
+	overflow: hidden;
 }
 
 .menu-lateral a {
 	display: block;
 	padding: 15px 35px;
 	color: #000;
+	min-width: 800px;
 }
 
 
@@ -175,8 +177,8 @@ a {
 
 .menu-lateral .ri {
 	color: #606060;
-	margin-right: 32px;
-	width: 20px;
+	margin-right: 38px;
+	width: 60px;
 	text-align: center;
 }
 
