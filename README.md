@@ -1,7 +1,4 @@
-# -YouTube-homepage-with-html-css-flexbox-and-GRID
+# YOUTUBE-HOMEPAGE|CSS-GRID|FLEXBOX|JS|VERCEL|
 
 
-
-
-
-![image](https://user-images.githubusercontent.com/26189854/227424553-6935bebd-2691-41f0-8af1-017bcfbbb8c9.png)
+![YoutubePlatForm Flexbox CSS-GRID](https://user-images.githubusercontent.com/26189854/227427154-936e59e3-0078-4b47-a5e9-50e543709698.gif)
